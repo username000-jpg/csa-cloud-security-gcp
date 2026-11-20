@@ -1,0 +1,60 @@
+[
+  {
+    "allowed": [
+      {
+        "IPProtocol": "tcp",
+        "ports": [
+          "80"
+        ]
+      },
+      {
+        "IPProtocol": "tcp",
+        "ports": [
+          "443"
+        ]
+      }
+    ],
+    "creationTimestamp": "2026-11-20T06:36:15.466-08:00",
+    "description": "",
+    "direction": "INGRESS",
+    "disabled": false,
+    "id": "2125393410179064880",
+    "kind": "compute#firewall",
+    "logConfig": {
+      "enable": false
+    },
+    "name": "fw-plataforma-inicial",
+    "network": "https://www.googleapis.com/compute/v1/projects/qwiklabs-gcp-03-154228349404/global/networks/default",
+    "priority": 1000,
+    "selfLink": "https://www.googleapis.com/compute/v1/projects/qwiklabs-gcp-03-154228349404/global/firewalls/fw-plataforma-inicial",
+    "sourceRanges": [
+      "0.0.0.0/0"
+    ]
+  },
+  {
+    "allowed": [
+      {
+        "IPProtocol": "tcp",
+        "ports": [
+          "22"
+        ]
+      }
+    ],
+    "creationTimestamp": "2026-11-20T06:59:07.989-08:00",
+    "description": "",
+    "direction": "INGRESS",
+    "disabled": false,
+    "id": "3991597438055866068",
+    "kind": "compute#firewall",
+    "logConfig": {
+      "enable": false
+    },
+    "name": "fw-plataforma-ssh",
+    "network": "https://www.googleapis.com/compute/v1/projects/qwiklabs-gcp-03-154228349404/global/networks/default",
+    "priority": 1000,
+    "selfLink": "https://www.googleapis.com/compute/v1/projects/qwiklabs-gcp-03-154228349404/global/firewalls/fw-plataforma-ssh",
+    "sourceRanges": [
+      "XXX.XXX.XXX.XXX/32"
+    ]
+  }
+]
